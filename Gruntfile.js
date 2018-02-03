@@ -1,5 +1,13 @@
 module.exports = function(grunt) {
   grunt.initConfig({
+    connect: {
+      server: {
+        options: {
+          port: 9000
+        }
+      }
+    },
+
     imagemin: {
       dynamic: {
         files: [{
@@ -7,9 +15,9 @@ module.exports = function(grunt) {
           progressive: true,
           interlaced: true,
           expand: true,
-          cwd: 'img/',
+          cwd: 'images/',
           src: ['*.{png,jpg,gif}'],
-          dest: 'img/'
+          dest: 'images/'
         }]
       }
     },
@@ -26,15 +34,29 @@ module.exports = function(grunt) {
           ]
       },
       dist: {
-        src: 'css/work_version.css',
-        dest: 'css/styles.css'
+        src: 'css/src/styles.css',
+        dest: 'css/dest/styles.css'
+      }
+    },
+
+    pug: {
+      compile: {
+        options: {
+          pretty: true,
+          data: {
+            debug: false
+          }
+        },
+        files: {
+          'index.html': 'tmpl.pug',
+        }
       }
     },
 
     watch: {
 			css: {
 		    files: [
-          'css/*.css'
+          'css/src/*.css'
         ],
 		    tasks: ['postcss', 'watch'],
 		    options: {
@@ -43,17 +65,21 @@ module.exports = function(grunt) {
 		        event: ['all'],
 		    }
       },
-      imgs: {
+      images: {
         files: [
-          'img/*.css'
+          'images/*.{png,jpg,gif}'
         ],
-		    tasks: ['imagemin', 'watch'],
-			}
+		    tasks: ['imagemin', 'watch']
+			},
+      html: {
+        files: [
+          '**/*.pug'
+        ],
+		    tasks: ['pug', 'watch']
+      }
     }
   });
-  grunt.loadNpmTasks('grunt-postcss');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('default', ['imagemin', 'postcss', 'watch']);
+  grunt.registerTask('default', ['connect', 'pug', 'imagemin', 'postcss', 'watch']);
 };
