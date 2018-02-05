@@ -1,4 +1,6 @@
 'use strict';
+
+
 let scrollpos = window.scrollY;
 let header = document.querySelector('.header');
 let headerHeight = header.offsetHeight;
@@ -11,7 +13,7 @@ function removeBkgClacc() {
   header.classList.remove('header_fade-in');
 }
 
-window.addEventListener('scroll', function() {
+window.onload = window.addEventListener('scroll', function() {
   scrollpos = window.scrollY;
   if(scrollpos >= headerHeight + 15) {
     addBkgClacc();

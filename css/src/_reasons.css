@@ -10,13 +10,12 @@
 
 .reasons__list {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .reasons__item {
   position: relative;
-  max-width: 30%;
   border-radius: var(--border-radius);
   background: #ffffff;
   text-align: center;
@@ -25,11 +24,14 @@
 }
 
 .reasons__picture {
-  max-height: 20rem;
   height: 0;
   padding-bottom: 50%;
   overflow: hidden;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
+
+  img {
+    width: 100%;
+  }
 }
 
 .reasons__text  {

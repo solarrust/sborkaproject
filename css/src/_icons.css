@@ -21,10 +21,10 @@
 }
 
 .icons__item {
-  width: 50%;
+  width: 49%;
   height: 33%;
+  overflow: hidden;
   display: inline-block;
-  float: left;
   border-bottom: 1px dashed #ffffff;
   padding: 10% 5%;
   font-size: inherit;
@@ -46,8 +46,10 @@
 .icons__picture {
   display: block;
   margin: 0 auto;
-  width: 5rem;
-  height: 5rem;
+  width: 25%;
+  min-height: 5rem;
+  background-position: center;
+  background-repeat: no-repeat;
 
    & + .icons__title {
      margin-top: 2rem;

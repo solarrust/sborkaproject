@@ -4,6 +4,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -36,9 +37,15 @@ section {
   }
 }
 
+.anchor {
+  display: block;
+  margin-top: -14rem;
+  padding-top: 14rem;
+}
+
 .section__title {
   font-family: Bernadette, sustem-ui;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .section__description {

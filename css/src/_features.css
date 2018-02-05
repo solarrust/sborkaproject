@@ -11,8 +11,10 @@
 }
 
 .features__picture {
-  max-width: 49%;
-  max-height: 48%;
+  width: 49%;
+  height: 49%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
 }
 
 .features__content {

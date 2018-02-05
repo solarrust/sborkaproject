@@ -6,6 +6,10 @@
       color(var(--gradient-color-one) a(-10%)),
       color(var(--gradient-color-two) a(-10%))
       );
+  --gradient-fog-reverse: linear-gradient(to top right,
+      color(var(--gradient-color-one) a(-10%)),
+      color(var(--gradient-color-two) a(-10%))
+      );
   --main-gradient: linear-gradient(to right,
       var(--gradient-color-one),
       var(--gradient-color-two));
@@ -24,6 +28,7 @@
   @custom-selector :--enter :hover, :focus;
 
   @custom-media --mobile-screen (width <= 500px);
-  @custom-media --tablet-screen (width > 500px) and (width <= 860px);
-  @custom-media --desktop-screen (width > 860px);
+  @custom-media --tablet-screen (width <= 860px);
+  @custom-media --laptop-screen (width < 1320px);
+  @custom-media --big-screen (width >= 1320px);
 }
