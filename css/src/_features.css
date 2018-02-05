@@ -1,0 +1,34 @@
+.features {
+  position: relative;
+}
+
+.features__set {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 75.5rem;
+}
+
+.features__picture {
+  max-width: 49%;
+  max-height: 48%;
+}
+
+.features__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 3rem 5rem;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: var(--border-radius);
+}
+
+.features__text {
+  margin: 4rem 0;
+  font-style: italic;
+  font-size: 1.8rem;
+}

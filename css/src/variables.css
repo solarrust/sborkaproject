@@ -1,0 +1,29 @@
+:root {
+  --gradient-color-one: #de813c;
+  --gradient-color-two: #3f519a;
+
+  --gradient-fog: linear-gradient(to bottom right,
+      color(var(--gradient-color-one) a(-10%)),
+      color(var(--gradient-color-two) a(-10%))
+      );
+  --main-gradient: linear-gradient(to right,
+      var(--gradient-color-one),
+      var(--gradient-color-two));
+
+
+  --light-text-color: #ffffff;
+  --main-text-color: #333332;
+  --accent-text-color: #de813c;
+  --gray-text-color: #a3a3a3;
+
+  --gray-bkg: #f4f4f4;
+
+  --transition: 0.5s ease;
+  --border-radius: 15px;
+
+  @custom-selector :--enter :hover, :focus;
+
+  @custom-media --mobile-screen (width <= 500px);
+  @custom-media --tablet-screen (width > 500px) and (width <= 860px);
+  @custom-media --desktop-screen (width > 860px);
+}

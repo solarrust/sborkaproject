@@ -1,7 +1,18 @@
-@import "reset.css";
-@import "variables.css";
-@import "fonts.css";
+@import "variables";
+@import "fonts";
 
-* {
-  box-sizing: border-box;
-}
+@import "reset";
+@import "critical";
+@import "_button";
+@import "_header";
+@import "_banner";
+@import "_reasons";
+@import "_about";
+@import "_features";
+@import "_services";
+@import "_icons";
+@import "_team";
+@import "_social-links";
+@import "_footer";
+
+@import "_media";

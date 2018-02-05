@@ -1,0 +1,27 @@
+.services {
+  background: var(--gray-bkg) url(../../images/services__bkg.jpg) no-repeat right center / 40% 100%;
+}
+
+.wrapper_services {
+  position: relative;
+}
+
+.services__content {
+  width: 30%;
+}
+
+.services__text {
+  font-weight: 300;
+
+  &:first-of-type {
+    margin-top: 4rem;
+  }
+
+  &:last-of-type {
+    margin-bottom: 4rem;
+  }
+}
+
+.services__text_important {
+  font-weight: 400;
+}

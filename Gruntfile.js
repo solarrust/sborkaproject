@@ -26,11 +26,11 @@ module.exports = function(grunt) {
       options: {
         map: true,
           processors: [
-              require('autoprefixer')({browsers: ['last 6 version']}),
+              require('postcss-import'),
+              require('postcss-cssnext'),
+              require('postcss-color-function'),
               require('postcss-custom-properties'),
-              require('precss'),
-              require('cssnext'),
-              require('postcss-import')
+              require('precss')
           ]
       },
       dist: {
@@ -81,5 +81,5 @@ module.exports = function(grunt) {
   });
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('default', ['connect', 'pug', 'imagemin', 'postcss', 'watch']);
+  grunt.registerTask('default', ['connect', 'pug', 'postcss', 'imagemin', 'watch']);
 };

@@ -1,0 +1,23 @@
+.button {
+  background-image: var(--main-gradient);
+  padding: 1.5rem 2.5rem;
+  border: none;
+  border-radius: 5rem;
+  font-size: inherit;
+  font-weight: 700;
+  color: var(--light-text-color);
+  text-transform: uppercase;
+  transition: var(--transition);
+
+  &:--enter {
+    cursor: pointer;
+    box-shadow: 2px 2px 10px 0 var(--gradient-color-one), -2px -2px 10px 2px var(--gradient-color-two);
+    transition: var(--transition);
+  }
+
+  &.button_white {
+    background-image: none;
+    background-color: #ffffff;
+    color: var(--main-text-color);
+  }
+}

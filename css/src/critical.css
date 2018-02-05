@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Lato, system-ui;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--main-text-color);
+  line-height: 1.5;
+
+  :any-link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+section {
+  padding: 6rem 0;
+}
+
+.wrapper {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.section__title {
+  font-family: Bernadette, sustem-ui;
+  font-size: 5rem;
+}
+
+.section__description {
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}

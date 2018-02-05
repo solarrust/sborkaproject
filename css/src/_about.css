@@ -1,0 +1,67 @@
+.wrapper_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  position: relative;
+
+  &:before {
+    content: "A";
+    display: block;
+    text-align: center;
+    font-size: 55rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    font-weight: 900;
+    background: url(../../images/about__bkg.jpg) no-repeat center / contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
+  }
+}
+
+.about__content {
+  max-width: 32%;
+}
+
+.about__text {
+  margin-top: 5rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+
+  & + & {
+    margin-top: 0;
+    margin-bottom: 5rem;
+  }
+}
+
+.about__text_important {
+  font-weight: 400;
+}
+
+.blockquote {
+  font-style: italic;
+  font-size: 1.8rem;
+  position: relative;
+  margin-top: 7rem;
+
+  &:before {
+    content: "\201c";
+    font-size: 22.5rem;
+    position: absolute;
+    top: 0;
+    left: -85px;
+  }
+}
+
+.blockquote__author {
+  display: block;
+  text-align: center;
+  font-family: Bernadette, sustem-ui;
+  font-size: 4.7rem;
+  margin-top: 6rem;
+}

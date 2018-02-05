@@ -1,0 +1,180 @@
+@media (--mobile-screen) {
+  html {
+    font-size: 44.2%;
+  }
+
+  .header {
+    text-align: center;
+    max-height: 16rem;
+  }
+
+  .logo {
+    float: none;
+  }
+
+  .menu {
+    float: none;
+    background-image: var(--main-gradient);
+    width: 130%;
+    max-height: 50vh;
+    margin-left: -15%;
+    margin-right: -15%;
+  }
+
+  .menu_hidden {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+
+  #menuToggle {
+    display: block;
+    background-image: url(../../images/burger__menu.svg);
+    margin: 0 auto;
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;
+    border: none;
+  }
+
+  .menu__link {
+    display: block;
+  }
+
+  .banner {
+    border-radius: 0;
+
+    &:before {
+      border-radius: 0;
+    }
+  }
+
+  .banner__text {
+    max-width: 100%;
+  }
+
+  .banner__title {
+    font-size: 7rem;
+  }
+
+  .banner__subtitle {
+    margin: 0 auto;
+  }
+
+  .reasons__list {
+    flex-wrap: wrap;
+  }
+
+  .reasons__item {
+    max-width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .about {
+    text-align: center;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .about .wrapper_flex {
+    flex-wrap: wrap;
+  }
+
+  .about__content {
+    max-width: 100%;
+  }
+
+  .blockquote {
+    &:before {
+      top: -20%;
+      left: -20%;
+    }
+  }
+
+  .features__set {
+    display: none;
+  }
+
+  .features__content {
+    width: 100%;
+    position: static;
+    transform: none;
+    padding: 0;
+  }
+
+  .services {
+    background-image: none;
+    text-align: center;
+  }
+
+  .services__content {
+    width: 100%;
+  }
+
+  .icons_services {
+    width: 100%;
+    position: static;
+    transform: none;
+    margin-top: 5%;
+  }
+
+  .team__content {
+    flex-wrap: wrap;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .team__item {
+    max-width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .social__list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social__item {
+    width: 33%;
+    border: none;
+
+    &:--enter {
+      box-shadow: none;
+    }
+  }
+
+  .footer {
+    padding: 3rem 1rem;
+  }
+
+  .contacts {
+    flex-direction: column;
+  }
+
+  .contacts__item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts__icon {
+    display: none;
+  }
+
+  .contact__title {
+    display: block;
+  }
+
+  .contacts__touch {
+    padding: 0;
+  }
+}

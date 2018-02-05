@@ -2,12 +2,15 @@
 <html lang="en_EN">
   <head>
     <title>Тестовое задание для SborkaProject</title>
-    <link href="./css/dest/styles.css" rel="stylesheet">
+    <link href="css/dest/styles.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/715fa6df7e.js"></script>
   </head>
   <body>
     <header class="header">
-      <div class="wrapper"><a class="logo" href="/">digital<span class="logo__accent">.</span>
-          <nav class="menu"><a class="menu__link" href="#services">what we do</a><a class="menu__link" href="#about">about</a><a class="menu__link" href="#features">features</a><a class="menu__link" href="#team">team</a><a class="menu__link" href="#pricing">pricing</a><a class="menu__link" href="#social-links">social links</a><a class="menu__link" href="#contact">contact</a></nav></a></div>
+      <div class="wrapper clearfix"><a class="logo" href="/">digital</a>
+        <button id="menuToggle"></button>
+        <nav class="menu menu_hidden" role="navigation"><a class="menu__link" href="#services">what we do</a><a class="menu__link" href="#about">about</a><a class="menu__link" href="#features">features</a><a class="menu__link" href="#team">team</a><a class="menu__link" href="#pricing">pricing</a><a class="menu__link" href="#social-links">social links</a><a class="menu__link" href="#contact">contact</a></nav>
+      </div>
     </header>
     <main class="main">
       <section class="banner">
@@ -15,7 +18,7 @@
           <div class="banner__text">
             <h1 class="banner__title">Simply the Best</h1>
             <h2 class="banner__subtitle">Reasons for Choosing Us</h2>
-            <p class="banner__description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p class="banner__description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
                 <button class="button button_white" type="button">read more</button>
           </div>
         </div>
@@ -23,35 +26,40 @@
       <section class="reasons">
         <div class="wrapper">
               <h2 class="section__title section__header_reasons">reasons</h2>
-          <figure class="reasons__item"><img class="reasons__picture" src="images/reasons__pic1.jpg">
-            <figcaption class="reasons__text"> 
-              <h3 class="reasons__title">Branded eCommerce</h3>
-              <p class="reasons__description">Our eCommerce design starts and ends with a best-in-class experience strategy that builds brands and drives transactions.</p>
-                  <button class="button" type="button">read more</button>
-            </figcaption>
-          </figure>
-          <figure class="reasons__item"><img class="reasons__picture" src="images/reasons__pic2.jpg">
-            <figcaption class="reasons__text">
-              <h3 class="reasons__title">Websites & Digital Platforms</h3>
-              <p class="reasons__description">Through a deep understanding of our audience’s makeup and motivations, we design digital experiences that connect with people.</p>
-                  <button class="button" type="button">read more</button>
-            </figcaption>
-          </figure>
-          <figure class="reasons__item"><img class="reasons__picture" src="images/reasons__pic3.jpg">
-            <figcaption class="reasons__text">
-              <h3 class="reasons__title">Video Production & Photography</h3>
-              <p class="reasons__description">Every brand is founded on powerful stories and truths; we create the branded content it takes to express these stories and truths.</p>
-                  <button class="button" type="button">read more</button>
-            </figcaption>
-          </figure>
+          <div class="reasons__list">
+            <figure class="reasons__item">
+              <div class="reasons__picture"><img src="images/reasons__pic1.jpg"></div>
+              <figcaption class="reasons__text"> 
+                <h3 class="reasons__title">Branded eCommerce</h3>
+                <p class="reasons__description">Our eCommerce design starts and ends with a best-in-class experience strategy that builds brands and drives transactions.</p>
+                    <button class="button button_reason" type="button">read more</button>
+              </figcaption>
+            </figure>
+            <figure class="reasons__item">
+              <div class="reasons__picture"><img src="images/reasons__pic2.jpg"></div>
+              <figcaption class="reasons__text">
+                <h3 class="reasons__title">Websites & Digital Platforms</h3>
+                <p class="reasons__description">Through a deep understanding of our audience’s makeup and motivations, we design digital experiences that connect with people.</p>
+                    <button class="button button_reason" type="button">read more</button>
+              </figcaption>
+            </figure>
+            <figure class="reasons__item">
+              <div class="reasons__picture"><img src="images/reasons__pic3.jpg"></div>
+              <figcaption class="reasons__text">
+                <h3 class="reasons__title">Video Production & Photography</h3>
+                <p class="reasons__description">Every brand is founded on powerful stories and truths; we create the branded content it takes to express these stories and truths.</p>
+                    <button class="button button_reason" type="button">read more</button>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </section>
       <section class="about">
-        <div class="wrapper">
+        <div class="wrapper wrapper_flex">
           <div class="about__content">
                 <h2 class="section__title">We are Creative Agency</h2>
             <p class="about__text about__text_important">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="about__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p class="about__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
                 <button class="button" type="button">read more</button>
           </div>
           <div class="about__content">
@@ -65,118 +73,88 @@
       </section>
       <section class="features">
         <div class="wrapper">
+          <div class="features__set"><img class="features__picture" src="../../images/features__pic1.jpg" aria-hidden="true"><img class="features__picture" src="../../images/features__pic2.jpg" aria-hidden="true"><img class="features__picture" src="../../images/features__pic3.jpg" aria-hidden="true"><img class="features__picture" src="../../images/features__pic4.jpg" aria-hidden="true"></div>
           <div class="features__content">
-                <h2 class="section__title">amazing features</h2>
+                <h2 class="section__title">Amazing features</h2>
             <p class="features__text">It has been a delight to work with Wonderful, they have been so inspirational as an agency, offering so much creative and digital advice/solutions for our heritage brand. We are in a year of significant growth and are so excited to finally get a website design we are thrilled about.</p>
                 <button class="button" type="button">read more</button>
           </div>
         </div>
       </section>
       <section class="services">
-        <div class="wrapper">
+        <div class="wrapper wrapper_services">
           <div class="services__content">
-                <h2 class="section__title">services we provide</h2>
+                <h2 class="section__title">Services We Provide</h2>
             <p class="services__text services__text_important">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="services__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p class="services__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                 <button class="button" type="button">read more</button>
           </div>
           <div class="icons icons_services">
-            <div class="icons__item"><i class="icons__picture"></i>
-              <h3 class="icons_title">logo & branding</h3>
+            <div class="icons__item"><i class="icons__picture icons__picture_logo"></i>
+              <h3 class="icons__title">logo & branding</h3>
             </div>
-            <div class="icons__item"><i class="icons__picture"></i>
-              <h3 class="icons_title">social media branding</h3>
+            <div class="icons__item"><i class="icons__picture icons__picture_media"></i>
+              <h3 class="icons__title">social media branding</h3>
             </div>
-            <div class="icons__item"><i class="icons__picture"></i>
-              <h3 class="icons_title">digital products</h3>
+            <div class="icons__item"><i class="icons__picture icons__picture_digitale"></i>
+              <h3 class="icons__title">digital products</h3>
             </div>
-            <div class="icons__item"><i class="icons__picture"></i>
-              <h3 class="icons_title">logo & branding</h3>
+            <div class="icons__item"><i class="icons__picture icons__picture_logo"></i>
+              <h3 class="icons__title">logo & branding</h3>
             </div>
-            <div class="icons__item"><i class="icons__picture"></i>
-              <h3 class="icons_title">mobile & web</h3>
+            <div class="icons__item"><i class="icons__picture icons__picture_web"></i>
+              <h3 class="icons__title">mobile & web</h3>
             </div>
-            <div class="icons__item"><i class="icons__picture"></i>
-              <h3 class="icons_title">video production</h3>
+            <div class="icons__item"><i class="icons__picture icons__picture_video"></i>
+              <h3 class="icons__title">video production</h3>
             </div>
           </div>
         </div>
       </section>
       <section class="team">
         <div class="wrapper">
-              <h2 class="section__title">We are perfect team</h2>
+              <h2 class="section__title">We are Perfect Team</h2>
           <p class="section__description">Наша история похожа на истории многих рок-групп. На кухне за бурным обсуждением последних рекламных кампаний нашими создателями прозвучала идея, а почему бы не сделать лучше и не сделать самим. И они стали собирать идеальный состав. И теперь их бунтарский дух и невероятное желание работать вдохновляют все агентство!</p>
           <div class="team__content">     
-                <figure class="team__item"><img class="team__photo" src="images/team__pic1.jpg">
+                <figure class="team__item">
+                  <div class="team__photo"><img src="images/team__pic1.jpg"></div>
                   <h3 class="team__name">Dan Maudhub</h3>
                   <p class="team__work">Managing Director</p>
                 </figure>
-                <figure class="team__item"><img class="team__photo" src="images/team__pic2.jpg">
+                <figure class="team__item">
+                  <div class="team__photo"><img src="images/team__pic2.jpg"></div>
                   <h3 class="team__name">Chris Higgins</h3>
                   <p class="team__work">Head of Digital Creative</p>
                 </figure>
-                <figure class="team__item"><img class="team__photo" src="images/team__pic3.jpg">
+                <figure class="team__item">
+                  <div class="team__photo"><img src="images/team__pic3.jpg"></div>
                   <h3 class="team__name">Jon Pattison</h3>
                   <p class="team__work">Digital Marketing Manager</p>
                 </figure>
-                <figure class="team__item"><img class="team__photo" src="images/team__pic4.jpg">
+                <figure class="team__item">
+                  <div class="team__photo"><img src="images/team__pic4.jpg"></div>
                   <h3 class="team__name">allison bart</h3>
                   <p class="team__work">Director of talent</p>
                 </figure>
-                <figure class="team__item"><img class="team__photo" src="images/team__pic5.jpg">
+                <figure class="team__item">
+                  <div class="team__photo"><img src="images/team__pic5.jpg"></div>
                   <h3 class="team__name">mj deery</h3>
                   <p class="team__work">Director practice</p>
                 </figure>
           </div>
         </div>
       </section>
-      <section class="pricing">
-        <div class="wrapper">
-              <h2 class="section__title">Take your website to the next level</h2>
-          <p class="section__description section__description_important">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            
-          </p>
-          <p class="section__description">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            
-          </p>
-          <div class="pricing__table">
-            <div class="tariff">
-              <div class="tariff__column">
-                <h3 class="tariff__title">Professional</h3>
-                <h4 class="tariff__subtitle">website design</h4><strong class="tariff__price">49.99</strong>
-                <h4 class="tariff__overview">overview</h4>
-                <p class="tariff__text"></p>
-              </div>
-              <div class="tariff__column">
-                <h3 class="features">features
-                  <ul class="features__list">
-                        <li class="features__item">Branding &amp; Brand Development</li>
-                        <li class="features__item">Advertising</li>
-                        <li class="features__item">Public Relations</li>
-                        <li class="features__item">Strategic Planning</li>
-                        <li class="features__item">Web Design &amp; Interactive</li>
-                        <li class="features__item">Social Media &amp; Digital Marketing</li>
-                  </ul>
-                </h3>
-                    <button class="button button_white" type="button">read more</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="social">
         <div class="wrapper">
-              <h2 class="section__title">Getting Touch</h2>
+              <h2 class="section__title section__title_light">Get in Touch</h2>
           <ul class="social__list">
-                <li class="social__item"><a class="social__link social__link_facebook" href="https://www.facebook.com/">facebook</a></li>
-                <li class="social__item"><a class="social__link social__link_twitter" href="https://www.twitter.com/">twitter</a></li>
-                <li class="social__item"><a class="social__link social__link_instagram" href="https://www.instagram.com/">instagram</a></li>
-                <li class="social__item"><a class="social__link social__link_vk" href="https://www.vk.com/">vk</a></li>
-                <li class="social__item"><a class="social__link social__link_dribbble" href="https://www.dribbble.com/">dribbble</a></li>
-                <li class="social__item"><a class="social__link social__link_linkedin" href="https://www.linkedin.com/">linkedin</a></li>
-                <li class="social__item"><a class="social__link social__link_youtube" href="https://www.youtube.com/">youtube</a></li>
+                <li class="social__item"><a class="social__link" href="https://www.facebook.com/" alt="facebook"><i class=" fa fa-facebook"></i></a></li>
+                <li class="social__item"><a class="social__link" href="https://www.twitter.com/" alt="twitter"><i class=" fa fa-twitter"></i></a></li>
+                <li class="social__item"><a class="social__link" href="https://www.instagram.com/" alt="instagram"><i class=" fa fa-instagram"></i></a></li>
+                <li class="social__item"><a class="social__link" href="https://www.vk.com/" alt="vk"><i class=" fa fa-vk"></i></a></li>
+                <li class="social__item"><a class="social__link" href="https://www.dribbble.com/" alt="dribbble"><i class=" fa fa-dribbble"></i></a></li>
+                <li class="social__item"><a class="social__link" href="https://www.linkedin.com/" alt="linkedin"><i class=" fa fa-linkedin"></i></a></li>
+                <li class="social__item"><a class="social__link" href="https://www.youtube.com/" alt="youtube"><i class=" fa fa-youtube"></i></a></li>
           </ul>
         </div>
       </section>
@@ -197,5 +175,6 @@
         </div>
       </footer>
     </main>
+    <script src="js/index.js"></script>
   </body>
 </html>
