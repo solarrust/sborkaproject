@@ -38,3 +38,10 @@ button.onclick = function(e) {
 
   menu.classList.toggle('menu_hidden');
 }
+
+let scroll;
+let html = document.documentElement;
+
+if (html.style.scrollBehavior === undefined) {
+  scroll = new SmoothScroll('a[href*="#"]');
+}
